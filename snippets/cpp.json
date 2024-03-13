@@ -1,0 +1,32 @@
+{
+	"cp-extension": {
+		"prefix": ["cpp-cp"],
+		"body": [
+			"#include <iostream>",
+			"#include <vector>",
+			"void solve()",
+			"{",
+				"\t$2",
+			"}",
+			"int main() {",
+			"\tstd::ios_base::sync_with_stdio(false);",
+			"\tstd::cin.tie(NULL);",
+			"\tint t;",
+			"\tstd::cin >> t;",
+			"\twhile(t--)",
+			"\t{\n\t\tsolve();\n\t}\n\treturn 0;\n}\n"
+		],
+		"description": "Default cpp code for CP"
+	},
+	"Header protection": {
+		"prefix": "ifndef",
+		"body": [
+			"#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+			"# define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+			"$2",
+			"",
+			"#endif"
+		],
+		"description": "Log output to console"
+	}
+}
