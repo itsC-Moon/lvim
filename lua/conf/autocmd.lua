@@ -19,3 +19,4 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	command = "nnoremap me :!c++ -std=c++11 -Wall  % -o main <CR>"
 
 })
+

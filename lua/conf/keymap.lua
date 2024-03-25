@@ -1,6 +1,7 @@
 
 vim.keymap.set('n','<M-l>',"<Cmd>:vertical resize -2<CR>")
 vim.keymap.set('n','<M-h>',"<Cmd>:vertical resize +2<CR>")
+-- vim.keymap.set('n','<leader>f',"<Cmd>:Telescop fd<CR>")
 vim.cmd("nnoremap vv V")
 -- lvim.keys.normal_mode['<C-k>'] = "<Cmd>:m .-2<CR>=="
 vim.cmd("nnoremap <F2> @:")
