@@ -11,12 +11,12 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*.c",
-	command = "nnoremap me :!cc -ggdb3  % -o main && ./main <CR>"
+	command = "nnoremap me :!cc  -Wall -Wextra % -o main <CR>"
 
 })
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*.cpp",
-	command = "nnoremap me :!c++ -std=c++11 -Wall  % -o main <CR>"
+	command = "nnoremap me :!c++ -std=c++11 -Wall -Wextra  % -o main <CR>"
 
 })
 

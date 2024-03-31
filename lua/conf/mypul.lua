@@ -1,4 +1,5 @@
 
+lvim.colorscheme = "catppuccin"
 lvim.plugins = {
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
@@ -6,6 +7,7 @@ lvim.plugins = {
 			"BurntSushi/ripgrep",
 		},
 	},
+	{"catppuccin/nvim"},
 	{ 'kdheepak/lazygit.nvim' },
 }
 

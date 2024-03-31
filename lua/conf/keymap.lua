@@ -12,12 +12,12 @@ lvim.keys.normal_mode["<tab>"] = "<Cmd>bnext<CR>"
 lvim.keys.normal_mode["<S-tab>"] = "<Cmd>bprevious<CR>"
 lvim.keys.normal_mode['<leader>b'] = "<Cmd>w !norminette %<CR>"
 lvim.keys.normal_mode["<C-b>"] = "<Cmd>NvimTreeToggle<CR>"
-
+lvim.keys.normal_mode["<F3>"] = ":%s@<c-r><c-w>@<c-r><c-w>@gc<c-f>$F@i"
 vim.keymap.set('n','mc',"<CMD>!make <CR>")
 
 lvim.keys.normal_mode["<esc>"] = "<Cmd>:noh<CR>"
 -- vim.keymap.set('t','<C-\\><C-N>',"<esc>")
-vim.api.nvim_set_keymap(  't'  ,'<leader><ESC>'  ,  '<C-\\><C-n>'  ,  {noremap = true}  )
+vim.api.nvim_set_keymap(  't'  ,'<leader><ESC>'  ,  '<C-\\><C-N>'  ,  {noremap = true}  )
 -- vim.opt.wrap = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

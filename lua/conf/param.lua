@@ -34,3 +34,4 @@ lvim.builtin.telescope.defaults.layout_config = {
     },
 }
 lvim.builtin.telescope.defaults.layout_strategy = "horizontal"
+-- lvim.builtin.alpha.dashboard.section.header.val = "\n\n\n\n\n\n\n\n\n\n"
