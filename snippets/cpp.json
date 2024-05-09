@@ -29,5 +29,17 @@
 			"#endif"
 		],
 		"description": "Log output to console"
+	},
+	"Orthodox Canonical": {
+		"prefix": "makeclass",
+		"body": [
+			"class ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}",
+			"{",
+			"public:",
+			"\t${TM_FILENAME_BASE/(.*)/${1:/upcase}/}();",
+			"\t${TM_FILENAME_BASE/(.*)/${1:/upcase}/}(${TM_FILENAME_BASE/(.*)/${1:/upcase}/} &${TM_FILENAME_BASE/(.*)/${1:/uppcase}/});",
+			"};"
+		],
+		"description": "Log output to console"
 	}
 }

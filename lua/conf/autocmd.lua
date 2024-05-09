@@ -16,7 +16,18 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*.cpp",
-	command = "nnoremap me :!c++ -std=c++11 -Wall -Wextra  % -o main <CR>"
+	command = "nnoremap me :!c++ -std=c++17 -Wall -Wextra  % -o main <CR>"
 
 })
 
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*.java",
+	command = "nnoremap me : !$PWD/mvnw spring-boot:run<CR>"
+
+})
+
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*.php",
+	command = "nnoremap me : !php artisen serve<CR>"
+
+})
