@@ -29,7 +29,9 @@ vim.opt.relativenumber = true
 vim.cmd("nnoremap <leader>lz :lua require'jdtls'.organize_imports()<CR>")
 
 
-
+vim.keymap.set('n', '<F5>', ":cprev<CR>")
+vim.keymap.set('n', '<F6>', ":cnext<CR>")
+vim.cmd("nnoremap <F4> :!c_formatter_42 %<CR>")
 -- nnoremap <A-o> <Cmd>lua require'jdtls'.organize_imports()<CR>
 -- nnoremap crv <Cmd>lua require('jdtls').extract_variable()<CR>
 -- vnoremap crv <Esc><Cmd>lua require('jdtls').extract_variable(true)<CR>

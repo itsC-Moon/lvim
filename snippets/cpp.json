@@ -1,12 +1,20 @@
 {
 	"cp-extension": {
-		"prefix": ["cpp-cp"],
+		"prefix": [
+			"cpp-cp"
+		],
 		"body": [
 			"#include <iostream>",
 			"#include <vector>",
+			"#define pn(x) std::cout << #x << ' ' << x",
+			"#define pnl(x) std::cout << #x << ' ' << x << '\n'",
+			"#define p(x) std::cout << x",
+			"#define pl(x) std::cout << x << '\n'",
+			"#define r(x) std::cin >> x;",
+			"using ll = long long;",
 			"void solve()",
 			"{",
-				"\t$2",
+			"\t$1",
 			"}",
 			"int main()",
 			"{",
@@ -41,5 +49,57 @@
 			"};"
 		],
 		"description": "Log output to console"
+	},
+	"vector": {
+		"prefix": "vec",
+		"body": [
+			"std::vector<${1:int}> ${2:vec}(${3:n});"
+		],
+		"description": "vector"
+	},
+	"umap": {
+		"prefix": "umap",
+		"body": [
+			"std::unordered_map<${1:int}, ${2:int}> ${3:map};"
+		],
+		"description": "vector"
+	},
+	"uset": {
+		"prefix": "uset",
+		"body": [
+			"std::unordered_set<${1:int}> ${2:set};"
+		]
+	},
+	"ifor": {
+		"prefix": "ifor",
+		"body": [
+			"for(int ${1:i} = 0; ${1} < ${2:n};${1}++)",
+			"{",
+			"$3",
+			"}"
+		],
+		"description": "set"
+	},
+	"rvec": {
+		"prefix": "rvec",
+		"body": [
+			"for(auto &it : ${1:vec}) std::cin >> it;"
+		],
+		"description": "read fix size vector"
+	},
+	"print vector": {
+		"prefix": "pvec",
+		"body": [
+			"for (auto &${1:it} : ${2:vec}) std::cout << ${1} << ' ';",
+			"std::cout << std::endl;"
+		],
+		"description": "print vector"
+	},
+	"sort vector": {
+		"prefix": "svec",
+		"body": [
+			"std::sort(${1:vec}.begin(), ${1}.end());"
+		],
+		"description": "sort vector"
 	}
 }
